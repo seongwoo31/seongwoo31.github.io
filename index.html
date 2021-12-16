@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    </script>
+    <script type = "text/javascript">
+        function zoomIn(event) {
+            event.target.style.transform = "scale(1.2)";
+            event.target.style.zIndex = 1;
+            event.target.style.transition = "all 0.5s";
+        }
+        function zoomOut(event) {
+            event.target.style.transform = "scale(1)";
+            event.target.style.zIndex = 0;
+            event.target.style.transition = "all 0.5s";
+        }
+        function zoomInx(event) {
+          event.target.style.width = "360px";
+          event.target.style.height = "411px";
+          event.target.style.transition = "all 0.5s";
+        }
+
+        function zoomOutx(event) {
+          event.target.style.width = "328px";
+          event.target.style.height = "374px";
+          event.target.style.transition = "all 0.5s";
+        }
+        $(document).ready(function(){
+            $('#img1').click(function(){
+                location.href="./first.html";
+            });
+            $('#img2').click(function(){
+                alert("2번 이미지");
+                
+            });
+            $('#img3').click(function(){
+                alert("3번 이미지");
+            });
+            $('#img4').click(function(){
+                location.href="./chu.html";
+            });
+            $('#logo').hover(function(){
+                color : blue;
+            });
+            $('.slider_item').eq(0).click(function(){
+                alert("돌아가는 첫번째 이미지");
+            });
+             $('.slider_item').eq(1).click(function(){
+                alert("돌아가는 두번째 이미지");
+            });
+              $('.slider_item').eq(2).click(function(){
+                alert("돌아가는 세번째 이미지");
+            });
+               $('.slider_item').eq(3).click(function(){
+                alert("돌아가는 네번째 이미지");
+            });
+                $('.slider_item').eq(4).click(function(){
+                alert("돌아가는 다섯번째 이미지");
+            });
+
+        });
+        
+
+        //  $(document).ready(function(){
+        //     $('#chuImg').click(function(){
+        //     alert("추천여행 클릭");
+
+
+        //     // var link = 'http://bino.blog';
+        //     // location.href=link;
+        //     });
+        // });
+
+
+
+        
+    </script>
+    <title></title>
+<style type="text/css">
+*{
+    padding: 0;
+    margin: 10px;
+}
+body{
+background-color: #ECFBFF ;
+}
+li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+header {
+    width: 1110px;
+    height: 110px;
+    margin-top: 10px;
+    border: solid 1px #cccccc; 
+}
+#logo{
+    margin: 20px;
+    border-bottom: dotted 2px gray;
+    font-size: 25px;
+    float: left;
+}
+#logo:hover{
+    color : blue;
+    margin: 20px;
+    border-bottom: dotted 2px gray;
+    float: left;
+}
+#top {
+    float: right;
+    margin: 30px 20px 0 0;
+}
+nav {
+    border-top: solid 2px #000000;
+    text-align: right;
+    width: 1110px;
+    height: 50px;
+    border-bottom: solid 2px #000000;
+
+}
+nav li{
+    display: inline;
+    margin: 50px 30px;
+}
+section{
+    background-color: #CCEEFF;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 0px #cccccc;
+/*    text-align: center;*/
+    width : auto;
+    height: auto;
+}
+#now{
+    margin-top: 530px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#li1:hover{
+    border: solid 5px #cccccc;
+}
+#li2:hover{
+    border: solid 5px #cccccc;
+}
+#li3:hover{
+    border: solid 5px #cccccc;
+}
+#li4:hover{
+    border: solid 5px #cccccc;
+}
+#li5:hover{
+    border: solid 5px #cccccc;
+}
+
+#img{
+    text-align: center;
+}
+#imgText{
+/*    letter-spacing:10px;*/
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+#img1:hover{
+    opacity: 0.7;
+}
+#img2:hover{
+    opacity: 0.7;
+}
+#img3:hover{
+    opacity: 0.7;
+}
+#chuMain{
+    background-image: url('cloud.jpg');
+    background-color: #ffffff;
+}
+#chu{
+
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: solid 0px #cccccc;
+}
+#chuTitle:hover{
+    color : blue;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#chuImg{
+    text-align: center;
+
+}
+/*#chuImg:hover{
+    opacity: 0.7;
+
+}*/
+#chuInfo{
+    text-align: left;
+    height: auto;
+    width: auto;
+    border: solid 0px #cccccc;
+}
+#chuInfoName{
+    font-size: 25px;
+    text-align: left;
+
+}
+#spanText1{
+    margin-left:220px;
+/*    margin: 135px;*/
+}
+#spanText2{
+    margin-left:270px;
+}
+#spanText3{
+    margin-left:240px;
+}
+aside {
+    float: right;
+    margin-top: 10px;
+    border: solid 0px #cccccc; 
+}
+aside li {
+    margin-bottom: 30px;
+}
+footer {
+    width: 1110px;
+    height: 100px;
+    border-top: solid 1px #cccccc;
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: solid 1px #cccccc; 
+}
+#address {
+    float: left;
+    margin: 30px 0 0 20px;
+}
+#customer {
+    float: right;
+    margin: 30px 0 0 180px;
+    padding-right: 20px;
+}
+#page{
+    width: 1130px;
+    height: auto;
+    margin: auto;
+    border: solid 5px #000000;
+}
+
+
+#slider {
+            width: 1110px;
+            position: relative;
+            margin:0;
+        }
+        .slider_item {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:0;
+            z-index: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition:all .9s ease-in-out;
+            transform: scale(0.9);
+        }
+        .slider_item img {width: 100%;}
+        .showing{
+            opacity: 1;
+            z-index: 1;
+            transform: none;
+        }
+        
+
+</style>
+</head>
+<body>
+<head>
+    <div id="logo">
+    여기어때
+</div>
+<div id="top">
+    로그인 | 회원가입 | 사이트맵 | 회사소개
+</div>
+</head>
+<body id="page">
+<div class="clear"></div>
+<nav>
+    <ul id = "ul">
+        <li id = "li1" >오늘의 여행지</li>
+        <li id = "li2" >여행 정보</li>
+        <li id = "li3">현재 날씨</li>
+        <li id = "li4">예약하기</li>
+        <li id = "li5">마이페이지</li>
+        
+    </ul>
+</nav>
+<div class="clear"></div>
+<div id="slider">
+        <div class="slider_item"><img src="./imgmain1.jpg"></div>
+        <div class="slider_item"><img src="./imgmain2.jpg"></div>
+        <div class="slider_item"><img src="./imgmain3.jpg"></div>
+        <div class="slider_item"><img src="./imgmain4.jpg"></div>
+        <div class="slider_item"><img src="./imgmain5.jpg"></div>
+    </div>
+    <div class="clear"></div>
+        <p id ="now">지금 바로 여행을 떠나세요</p>
+    <div class="clear"></div>
+
+    <script>
+        const showing_class = "showing";
+        const firstslide = document.querySelector(".slider_item:first-child");
+        function slide() {
+            const currentSlide = document.querySelector(`.${showing_class}`);
+            if(currentSlide){
+                currentSlide.classList.remove(showing_class);
+                const nextSlide = currentSlide.nextElementSibling;
+                if(nextSlide){
+                    nextSlide.classList.add(showing_class);
+                } else {
+                    firstslide.classList.add(showing_class);
+                }
+                
+            } else {
+                firstslide.classList.add(showing_class);
+            }
+        }
+
+        slide();
+        setInterval(slide, 4000)
+
+
+    </script>
+
+<SECTION>
+
+    <div id = "img"> 
+         <img id="img1" src="./img1.jpg"
+         onmouseenter="zoomIn(event)"
+         onmouseleave="zoomOut(event)"/>
+         <img id="img2" src="./img2.jpg" 
+         onmouseenter="zoomIn(event)"
+         onmouseleave="zoomOut(event)"/>
+         <img id="img3" src="./img3.jpg"
+         onmouseenter="zoomIn(event)"
+         onmouseleave="zoomOut(event)"/>
+    </div>
+    <div id = "imgText">
+        <span id = "spanText1">비행</span>
+        <span id = "spanText2">힐링</span>
+        <span id = "spanText3">가족여행</span>
+    </div>
+
+
+
+
+<div class="clear"></div><!-- 밑으로 정리-->
+<div id = "chuMain">
+    <div id ="chu">
+        <p id ="chuTitle"> 이번주 추천 여행지</p>
+        <div id = "chuImg" >
+            <img id="img4" src="./img4.jpg" 
+                onmouseenter="zoomInx(event)"
+                onmouseleave="zoomOutx(event)"/>
+        </img>
+        </div>
+    </div>
+
+    <div id = "chuInfo">
+        <aside>
+        <ul>
+            <li>예약하기</li>
+            <li>1대1 문의</li>
+        </ul>
+        </aside>
+        <p id = "chuInfoName">이번주 추천 여행지
+        </p>
+        <p>부산-양양
+        </p>
+        <p>아름다운 자연경관을 만나러
+            강원도로 떠나는 항공여행
+            <br></br>
+        </p>
+        
+    </div>
+</div>
+<div class="clear"></div>
+</SECTION>
+
+<div class="clear"></div>
+
+
+<footer>
+    <div id="address"><!-- 아이디값 주고 #으로 설정한다.-->
+    대표이사 : 홍길동 
+    사업자 등록번호 : 123-456-7890</div>
+    <div id="customer">
+    고객센터 : 1588-1688 <div>
+</footer>
+</body>
+</html>
