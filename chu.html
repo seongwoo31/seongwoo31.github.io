@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#img1').click(function(){
+                alert("부산-양양 이미지");
+            });
+            $('#logo').hover(function(){
+                color : blue;
+            });
+            $('#logo').click(function(){
+                 location.href="./index.html";
+            });
+            $('#btnInfo').click(function(){
+                alert("일정 확인 버튼 클릭");
+            });
+            $('#btnBook').click(function(){
+                alert("예약하기 버튼 클릭");
+            });
+            
+        });
+        
+
+    
+        
+
+
+    </script>
+    <title></title>
+<style type="text/css">
+*{
+    padding: 0;
+    margin: 10px;
+}
+body{
+    background-color: #ECFBFF ;
+}
+li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+header {
+    width: 1110px;
+    height: 110px;
+    margin-top: 10px;
+    border: solid 1px #cccccc; 
+}
+#logo{
+    margin: 20px;
+    border-bottom: dotted 2px gray;
+    font-size: 25px;
+    float: left;
+}
+#logo:hover{
+    color : blue;
+    margin: 20px;
+    border-bottom: dotted 2px gray;
+    float: left;
+}
+#li1:hover{
+    border: solid 5px #cccccc;
+}
+#li2:hover{
+    border: solid 5px #cccccc;
+}
+#li3:hover{
+    border: solid 5px #cccccc;
+}
+#li4:hover{
+    border: solid 5px #cccccc;
+}
+#li5:hover{
+    border: solid 5px #cccccc;
+}
+#top {
+    float: right;
+    margin: 30px 20px 0 0;
+}
+nav {
+    border-top: solid 2px #000000;
+    text-align: right;
+    width: 1110px;
+    height: 50px;
+    border-bottom: solid 2px #000000;
+
+}
+nav li{
+    display: inline;
+    margin: 50px 30px;
+}
+section{
+    background-color: #CCEEFF;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 0px #cccccc;
+    width : auto;
+    height: auto;
+}
+aside{
+    width: 600px;
+    margin-top: 10px;
+    margin-right: 0px;
+    float: right;
+}
+
+footer {
+    width: 1110px;
+    height: 100px;
+    border-top: solid 1px #cccccc;
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: solid 1px #cccccc; 
+}
+#address {
+    float: left;
+    margin: 30px 0 0 20px;
+}
+#customer {
+    float: right;
+    margin: 30px 0 0 180px;
+    padding-right: 20px; 
+}
+#page{
+    width: 1130px;
+    height: auto;
+    margin: auto;
+    border: solid 5px #000000;
+}
+#tt{
+    font-size: 35px;
+}
+#date{
+    margin-left: 14px;
+}
+#line{
+    border-bottom: solid 5px #000000; 
+}
+#line2{
+    border-bottom: solid 2px #000000; 
+}
+#info{
+    float: left;
+
+}
+#btnInfo{
+    background-color: #ffffff;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+#btnInfo:hover{
+    background-color: #A0F3F9;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+#chuPrice{
+    font-size: 35px;
+    float: right;
+    margin-top: 270px;
+}
+#booking{
+    float: left;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+#btnBook{
+    background-color: #ffffff;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+#btnBook:hover{
+    background-color: #A0F3F9;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+#text{
+    margin-top: 10px;
+    margin-right: 0px;
+    float: left;
+}
+#qwer{
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: solid 1px #cccccc; 
+}
+#poly{
+    margin-left: 43px;
+}
+#img1:hover{
+    opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+<head>
+    <div id="logo">
+    여기어때
+</div>
+<div id="top">
+    로그인 | 회원가입 | 사이트맵 | 회사소개
+</div>
+</head>
+<body id="page">
+<div class="clear"></div>
+
+<nav>
+    <ul id = "ul">
+        <li id = "li1" >오늘의 여행지</li>
+        <li id = "li2" >여행 정보</li>
+        <li id = "li3">현재 날씨</li>
+        <li id = "li4">예약하기</li>
+        <li id = "li5">마이페이지</li>
+    </ul>
+</nav>
+<div class="clear"></div>
+<SECTION>
+    <div>
+        <img id="img1" src="./img4_4.jpg"></img>
+        <aside>
+        <ul>
+            <li id = "tt">[특가] 이번주 추천 여행지 </li>
+            <div id="line"></div>
+            <li><img id="img2" src="./q.png"></img><img id="img3" src="./w.png"></img></li>
+            <li><span>비행</span> <span id = "date">3/4</span></li>
+            <li id="info"><BUTTON id = "btnInfo">일정 확인하기</BUTTON></li>
+            <li id = "chuPrice">125,000</li>
+            <li id ="booking"><Button id = "btnBook">예약하기</Button></li>
+        </ul>
+        
+        </aside>
+    
+
+
+
+
+    </div>
+
+
+    <div class="clear"></div>
+    <div id="line2"></div>
+    <div class="clear"></div>
+    <div>
+        <p id ="qwer">여행 주요일정</p>
+        <p><span>일정</span><span id = "poly">3박4일 폴리항공</span></p>
+        <p><span>여행도시</span><span>부산-양양</span></p>
+        <p><span>예양현황</span><span>예약:5명 좌석:30석</span></p>
+        <p><span>상품가격</span><span>125,000원</span></p>
+    </div>
+    <div class="clear"></div>
+
+</SECTION>
+
+<div class="clear"></div>
+
+<footer>
+    <div id="address"><!-- 아이디값 주고 #으로 설정한다.-->
+    대표이사 : 홍길동 
+    사업자 등록번호 : 123-456-7890</div>
+    <div id="customer">
+    고객센터 : 1588-1688 <div>
+</footer>
+</body>
+</html>

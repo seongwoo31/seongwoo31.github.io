@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#img1').click(function(){
+                alert("첫번째 이미지");
+            });
+            $('#img2').click(function(){
+                alert("두번째 이미지");
+            });
+            $('#img3').click(function(){
+                alert("세번째 이미지");
+            });
+            $('#logo').hover(function(){
+                color : blue;
+            });
+            $('#logo').click(function(){
+                 location.href="./index.html";
+            });
+        });
+    </script>
+    <title></title>
+<style type="text/css">
+*{
+    padding: 0;
+    margin: 10px;
+}
+body{
+    background-color: #ECFBFF ;
+}
+li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+header {
+    width: 1110px;
+    height: 110px;
+    margin-top: 10px;
+    border: solid 1px #cccccc; 
+}
+#logo{
+    margin: 20px;
+    border-bottom: dotted 2px gray;
+    font-size: 25px;
+    float: left;
+}
+#logo:hover{
+    color : blue;
+    margin: 20px;
+    border-bottom: dotted 2px gray;
+    float: left;
+}
+#top {
+    float: right;
+    margin: 30px 20px 0 0;
+}
+#li1:hover{
+    border: solid 5px #cccccc;
+}
+#li2:hover{
+    border: solid 5px #cccccc;
+}
+#li3:hover{
+    border: solid 5px #cccccc;
+}
+#li4:hover{
+    border: solid 5px #cccccc;
+}
+#li5:hover{
+    border: solid 5px #cccccc;
+}
+nav {
+    border-top: solid 2px #000000;
+    text-align: right;
+    width: 1110px;
+    height: 50px;
+    border-bottom: solid 2px #000000;
+
+}
+nav li{
+    display: inline;
+    margin: 50px 30px;
+}
+section{
+    background-color: #CCEEFF;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 0px #cccccc;
+/*    text-align: center;*/
+    width : auto;
+    height: auto;
+}
+
+#img{
+    text-align: left;
+    margin-top: 10px;
+}
+#img1:hover{
+    opacity: 0.7;
+}
+#img2:hover{
+    opacity: 0.7;
+}
+#img3:hover{
+    opacity: 0.7;
+}
+
+#main {
+	width: 600px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+#list1{
+    background-color: #ffffff
+}
+aside li {
+    margin-bottom: 10px;
+}
+#price{
+	font-size: 24px;
+	margin-left: 570px;
+}
+#font{
+	font-weight: 1000;
+}
+footer {
+    width: 1110px;
+    height: 100px;
+    border-top: solid 1px #cccccc;
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: solid 1px #cccccc; 
+}
+#address {
+    float: left;
+    margin: 30px 0 0 20px;
+}
+#customer {
+    float: right;
+    margin: 30px 0 0 180px;
+    padding-right: 20px;
+}
+#page{
+    width: 1130px;
+    height: auto;
+    margin: auto;
+    border: solid 5px #000000;
+}
+
+
+
+</style>
+</head>
+<body>
+<head>
+    <div id="logo">
+    여기어때
+</div>
+<div id="top">
+    로그인 | 회원가입 | 사이트맵 | 회사소개
+</div>
+</head>
+<body id="page">
+<div class="clear"></div>
+
+<nav>
+    <ul id = "ul">
+        <li id = "li1" >오늘의 여행지</li>
+        <li id = "li2" >여행 정보</li>
+        <li id = "li3">현재 날씨</li>
+        <li id = "li4">예약하기</li>
+        <li id = "li5">마이페이지</li>
+    </ul>
+</nav>
+<div class="clear"></div>
+<SECTION>
+<div id ="list1">
+    <div id = "img">
+         <img id="img1" src="./img1.jpg"></img>
+
+         <aside id = "main">
+        <ul>
+        	<li id ="price">100000 </li>
+            <li id = "font">[항공+호텔] 사이판 자유여행</li>
+            <li>항공+호텔+여행자보험이 포함된 사이판 자유여행</li>
+            <li>사이판</li>
+            <li>여행기간 4/5일</li>
+        </ul>
+        </aside>
+
+    </div>
+</div>
+    <div id ="list1">
+        <div id = "img">
+             <img id="img2" src="./img2.jpg"></img>
+
+             <aside id = "main">
+            <ul>
+                <li id ="price">200000 </li>
+                <li id = "font">[항공+호텔+가이드] 호주</li>
+                <li>항공+호텔+여행자보험+가이드가 포함된 호주 여행</li>
+                <li>호주</li>
+                <li>여행기간 6/7일</li>
+            </ul>
+            </aside>
+
+        </div>
+    </div>
+    <div id ="list1">
+        <div id = "img">
+             <img id="img3" src="./img3.jpg"></img>
+             <aside id = "main">
+            <ul>
+                <li id ="price">300000 </li>
+                <li id = "font">[항공+호텔] 가족여행</li>
+                <li>항공+호텔이 포함된 자유 가족여행</li>
+                <li>제주도</li>
+                <li>여행기간 3/4일</li>
+            </ul>
+            </aside>
+
+        </div>
+    </div>
+</SECTION>
+
+<div class="clear"></div>
+
+<footer>
+    <div id="address"><!-- 아이디값 주고 #으로 설정한다.-->
+    대표이사 : 홍길동 
+    사업자 등록번호 : 123-456-7890</div>
+    <div id="customer">
+    고객센터 : 1588-1688 <div>
+</footer>
+</body>
+</html>
